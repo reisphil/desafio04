@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="container cabecalho">
+        <h1 class="titulo">Mentoria</h1>
+        <p class="dados">Preencha o formulario abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <main class="container">
+        <div class="mentoria">
+            <div class="cadastro">
+                <h2>Informações pessoais</h2>
+                <div class="cadastro__pessoal">
+                    <form class="cadastro__pessoal--formulario">
+                        <div class="cadastro__pessoal--input">
+                            <label class="cadastro__label" for="nome">Nome</label>
+                            <input id="nome" class="cadastro__input" name="nome" type="text" required></input>
+                        </div>
+                        <div class="cadastro__pessoal--input">
+                            <label class="cadastro__label" for="sobrenome">Sobrenome</label>
+                            <input id="sobrenome" class="cadastro__input" name="sobrenome" type="text" required></input>
+                        </div>
+                        <div class="cadastro__pessoal--input">
+                            <label class="cadastro__label" for="email">Email <span class="cadastro__label--info">(digite um email válido)</span></label>
+                            <input id="email" class="cadastro__input cadastro__input--full" name="email" type="email" required></input>
+                        </div>
+                        <div class="cadastro__pessoal--input">
+                            <label class="cadastro__label" for="senha">Senha <span class="cadastro__label--info">(digite um email válido)</span></label>
+                            <input id="senha" class="cadastro__input cadastro__input--full" name="senha" type="password" required></input>
+                        </div>
+                    </form>
+                </div>
+
+                <h2 class="mentor">Informações do Mentor</h2>
+                <div class="cadastro__mentor">
+                    <form>
+                        <div class="cadastro__mentor--input">
+                            <label class="cadastro__label" for="mentor">Nome do seu mentor <span class="cadastro__label--info">(só o primeiro nome)</span></label>
+                            <input id="mentor" class="cadastro__input cadastro__input--mentor" name="mentor" type="text" required></input>
+                        </div>
+                    </form>
+                </div>
+
+                <h2 class="horarios">Seus horários disponíveis</h2>
+                <div class="cadastro__horarios">
+                    <form>
+                        <p class="cadastro__horarios--texto">Primeira mentoria</p>
+                        <div class="cadastro__horarios--input">
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="data1">Data <span class="cadastro__label--info">(DD/MM/AAAA)</span></label>
+                                <input id="data1" class="cadastro__input" name="data1" type="date" required></input>
+                            </div>
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="das1">Das</label>
+                                <input id="das1" class="cadastro__input cadastro__input--hora" name="das1" type="time" required></input>
+                            </div>
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="ate1">Até</label>
+                                <input id="ate1" class="cadastro__input cadastro__input--hora" name="ate1" type="time" required></input>
+                            </div>
+                        </div>
+
+                        <p class="cadastro__horarios--texto">Segunda mentoria</p>
+                        <div class="cadastro__horarios--input">
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="data1">Data <span class="cadastro__label--info">(DD/MM/AAAA)</span></label>
+                                <input id="data1" class="cadastro__input" name="data1" type="date" required></input>
+                            </div>
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="das1">Das</label>
+                                <input id="das1" class="cadastro__input cadastro__input--hora" name="das1" type="time" required></input>
+                            </div>
+                            <div class="cadastro__horarios--data-hora">
+                                <label class="cadastro__label" for="ate1">Até</label>
+                                <input id="ate1" class="cadastro__input cadastro__input--hora" name="ate1" type="time" required></input>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="salvar">
+                <form>
+                    <input class="salvar__botao" type="submit" value="Salvar">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

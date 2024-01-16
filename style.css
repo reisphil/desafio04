@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+
+
+/* HEADER */
+
+.cabecalho {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 27.25rem;
+    justify-content: center;
+    position: relative;
+}
+
+.cabecalho::before {
+    background: #535971;
+    content: '';
+    height: 27.25rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.cabecalho h1 {
+    /* font-family: Staatliches; */
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-left: 3rem;
+    text-transform: uppercase;
+}
+
+.cabecalho p {
+    /* font-family: Poppins; */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-left: 3rem;
+    width: 26.0625rem;
+}
+
+
+/* MAIN */
+
+main {
+    background-color: #EFEFEF;
+    height: 75rem; 
+}
+
+ .mentoria {
+    left: 50%;
+    position: absolute;
+    top: 20rem;
+    transform: translateX(-50%);
+} 
+
+
+/* INFORMAÇÕES PESSOAIS / DO MENTOR / HORÁRIOS DISPONÍVEIS */
+
+.cadastro {
+    background-color: #fff;
+    border-radius: 1.25rem 1.25rem 0rem 0rem; 
+    padding: 4rem;
+}
+
+.cadastro h2 {
+    color: #535971;
+    /* font-family: Staatliches; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.125rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.cadastro__pessoal, .cadastro__mentor, .cadastro__horarios {
+    border-top: solid 1px #E6E6F0;
+    padding-top: 1rem;
+}
+
+.cadastro__pessoal--formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cadastro__pessoal--input, .cadastro__mentor--input {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro__label {
+    color: #4E4958;
+    /* font-family: Poppins; */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.cadastro__label--info {
+    color: #C1BCCC;
+    /* font-family: Poppins; */
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.cadastro__input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+    height: 3.5rem;
+    padding: 1rem;
+    width: 21rem;
+}
+
+.cadastro__pessoal--input:nth-child(3), .cadastro__pessoal--input:nth-child(4) {
+    margin-top: 1rem;
+}
+
+.cadastro__pessoal--input:nth-child(3), .cadastro__pessoal--input:nth-child(4), .cadastro__input--full, .cadastro__input--mentor {
+    width: 100%;
+}
+
+.mentor, .horarios {
+    margin-top: 2rem;
+}
+
+.cadastro__horarios--input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.cadastro__horarios--texto {
+    color: #535971;
+    /* font-family: Staatliches; */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.125rem;
+    text-transform: uppercase;
+}
+
+.cadastro__input--hora {
+    width: 8.75rem;
+}
+
+.cadastro__horarios--data-hora {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro__horarios--input:last-child {
+    margin-bottom: 0;
+}
+
+/* SESSÃO SALVAR */
+
+.salvar {
+    align-items: center;
+    background: #535971; 
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+}
+
+.salvar__botao {
+    background: #FF5374;
+    border-radius: 1.25rem;
+    border-style: none;
+    color: #fff;
+    font-family: Staatliches;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 3.47825rem;
+    line-height: 1.625rem;
+    padding: 0.9375rem 2.5rem;
+    transition: background 0.3s ease;
+    width: 38rem;
+}
+
+.salvar__botao:hover {
+    background: #cc425d;
+}
